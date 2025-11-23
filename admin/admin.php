@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// لو الأدمن أصلاً مسجل دخول، رجعيه للصفحة الرئيسية
+// لو الأدمن أصلاً مسجل دخول، يرجع للصفحة الرئيسية
 if(isset($_SESSION['admin'])){
     header("Location: manageEvents.php");
     exit();
